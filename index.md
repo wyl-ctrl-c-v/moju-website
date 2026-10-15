@@ -53,7 +53,7 @@ description: 面向塑料模具工厂的产能负荷预测与降本增效经济�
 ## 界面展示
 
 ![系统看板](static/image/dashboard.svg)
-<div class="fig-caption">图 2：系统总览看板（替换为你的实际运行截图）</div>
+<div class="fig-caption">图 2：系统总览看板（示例截图）</div>
 
 ## 功能模块
 
@@ -78,9 +78,9 @@ description: 面向塑料模具工厂的产能负荷预测与降本增效经济�
 ```
 @misc{moju2026capacity,
   title={塑料模具工厂产能负荷预测与经济分析系统},
-  author={你的名字},
+  author={Zhang He},
   year={2026},
   note={Flask + scikit-learn 实现的产能预测、排程优化与经济分析系统},
-  howpublished={\url{https://github.com/你的用户名/moju}}
+  howpublished={\url{https://github.com/wyl-ctrl-c-v/moju-website}}
 }
 ```
