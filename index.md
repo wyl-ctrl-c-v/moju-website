@@ -47,12 +47,12 @@ The goal is to build a closed loop of <i>data modeling &rarr; capacity forecasti
 
 ## Architecture
 
-![System architecture](static/image/pipeline.svg)
+![System architecture]({{ site.baseurl }}/static/image/pipeline.svg)
 <div class="fig-caption">Figure 1: System data flow and module architecture</div>
 
 ## Screenshots
 
-![System dashboard](static/image/dashboard.svg)
+![System dashboard]({{ site.baseurl }}/static/image/dashboard.svg)
 <div class="fig-caption">Figure 2: Overview dashboard (sample screenshot)</div>
 
 ## Modules

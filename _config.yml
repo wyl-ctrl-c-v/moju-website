@@ -10,7 +10,7 @@ description: "Data modeling → capacity forecasting → scheduling optimization
 #   - For a user site (username.github.io), keep baseurl: ""
 #   - For a project site (username.github.io/repo-name), set baseurl to "/repo-name"
 # The page uses relative image paths, so in most cases it works even without baseurl.
-baseurl: ""
+baseurl: "/moju-website"
 url: ""
 
 # Markdown parser and syntax highlighter

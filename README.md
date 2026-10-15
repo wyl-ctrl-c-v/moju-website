@@ -50,7 +50,7 @@ Then open http://localhost:4000 in your browser.
 3. Repository → `Settings` → `Pages` → `Build and deployment` → `Deploy from a branch` → branch `main`, folder `/(root)` → Save;
 4. After about 1 minute, visit: `https://your-username.github.io/project_website/`.
 
-> Note: if images do not show after deployment, open `_config.yml` and change `baseurl: ""` to `baseurl: "/project_website"` (i.e. `/repo-name`).
+> Note: `baseurl` is set to `/moju-website`. If you rename the repository, update `baseurl` in `_config.yml` and the image paths in `index.md` accordingly.
 
 ## Notes
 - This page is a **static introduction page**, used to present what the project is, its features, screenshots, and links;
