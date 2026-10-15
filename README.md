@@ -1,42 +1,40 @@
-# 项目主页模板（Jekyll）
+# Project Website Template (Jekyll)
 
-这是为你「塑料模具工厂 · 产能负荷预测与经济分析系统」生成的**项目介绍页**，基于 Jekyll，可一键部署到 GitHub Pages。
+This is the **project introduction page** generated for the "Plastic Mold Factory: Capacity-Load Forecasting & Economic Analysis System". It is built with Jekyll and can be deployed to GitHub Pages.
 
-## 目录结构
+## Directory Structure
 
 ```
 project_website/
-├── _config.yml              # Jekyll 配置
-├── index.md                 # 页面内容（改这里！）
+├── _config.yml              # Jekyll configuration
+├── index.md                 # Page content (edit this file!)
 ├── _layouts/
-│   └── project_page.html    # 页面布局模板
+│   └── project_page.html    # Page layout template
 └── static/
     └── image/
-        ├── dashboard.svg    # 看板占位图（替换成真实截图）
-        └── pipeline.svg     # 架构图
+        ├── dashboard.svg    # Dashboard placeholder (replace with a real screenshot)
+        └── pipeline.svg     # Architecture diagram
 ```
 
-## 使用步骤
+## Usage
 
-### 1. 改内容
-打开 `index.md`，把开头的占位信息改掉：
+### 1. Edit the content
+Open `index.md` and update the fields in the front matter:
 
-| 占位 | 改成 |
-|------|------|
-| `你的名字` | 你的姓名 |
-| `你的单位 / 团队` | 你的单位或团队名 |
-| `https://github.com/你的用户名/moju` | 你的 GitHub 仓库地址 |
-| `https://你的应用.onrender.com` | 系统在线地址（部署后可填） |
+| Placeholder | Replace with |
+|-------------|--------------|
+| `zhanghe` | Your name |
+| `https://github.com/wyl-ctrl-c-v/moju-website` | Your GitHub repository URL |
 
-### 2. 替换图片
-把你系统的实际运行截图保存为 PNG，放到 `static/image/` 里，然后在 `index.md` 中把对应的图片引用改掉，例如：
+### 2. Replace the images
+Save a real screenshot of the running system as a PNG, put it into `static/image/`, and update the corresponding reference in `index.md`, e.g.:
 
 ```markdown
-![系统看板](static/image/dashboard.png)
+![System dashboard](static/image/dashboard.png)
 ```
 
-### 3. 本地预览（可选）
-安装 Jekyll 后运行：
+### 3. Preview locally (optional)
+After installing Jekyll, run:
 
 ```bash
 cd project_website
@@ -44,16 +42,16 @@ bundle install
 bundle exec jekyll serve
 ```
 
-浏览器打开 http://localhost:4000 查看效果。
+Then open http://localhost:4000 in your browser.
 
-### 4. 部署到 GitHub Pages
-1. 在 GitHub 新建一个仓库，比如叫 `project_website`；
-2. 把本文件夹上传 / push 到该仓库；
-3. 仓库 → `Settings` → `Pages` → `Build and deployment` 选 `Deploy from a branch` → 分支选 `main`、目录选 `/(root)` → Save；
-4. 约 1 分钟后访问：`https://你的用户名.github.io/project_website/`。
+### 4. Deploy to GitHub Pages
+1. Create a new repository on GitHub, e.g. `project_website`;
+2. Upload / push this folder to the repository;
+3. Repository → `Settings` → `Pages` → `Build and deployment` → `Deploy from a branch` → branch `main`, folder `/(root)` → Save;
+4. After about 1 minute, visit: `https://your-username.github.io/project_website/`.
 
-> 注意：如果部署后图片不显示，打开 `_config.yml`，把 `baseurl: ""` 改成 `baseurl: "/project_website"`（`/仓库名`）即可。
+> Note: if images do not show after deployment, open `_config.yml` and change `baseurl: ""` to `baseurl: "/project_website"` (i.e. `/repo-name`).
 
-## 提示
-- 这个页面是**静态介绍页**，用来展示项目是什么、有什么功能、截图和链接；
-- 你那个 Flask 系统本身需要 Python 运行环境，请另外部署到 Render / Railway 等平台（见项目根目录说明）。
+## Notes
+- This page is a **static introduction page**, used to present what the project is, its features, screenshots, and links;
+- The Flask system itself requires a Python runtime and should be deployed separately to platforms such as Render / Railway.

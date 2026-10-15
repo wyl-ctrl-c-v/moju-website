@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="300" viewBox="0 0 960 300" font-family="Segoe UI, PingFang SC, Microsoft YaHei, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="300" viewBox="0 0 960 300" font-family="Segoe UI, Arial, sans-serif">
   <defs>
     <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
       <path d="M0,0 L0,6 L9,3 z" fill="#5a7a9a"/>
@@ -7,48 +7,47 @@
   <rect width="960" height="300" rx="12" fill="#0d1b2a"/>
 
   <g>
-    <rect x="30" y="40" width="150" height="64" rx="10" fill="#111827" stroke="#00d4ff" stroke-width="1.5"/>
-    <text x="105" y="66" fill="#e8edf5" font-size="14" font-weight="600" text-anchor="middle">数据采集 / 模拟</text>
-    <text x="105" y="86" fill="#5a7a9a" font-size="11" text-anchor="middle">设备 / 订单 / 工艺 / 财务</text>
+    <rect x="40" y="40" width="160" height="64" rx="10" fill="#111827" stroke="#00d4ff" stroke-width="1.5"/>
+    <text x="120" y="66" fill="#e8edf5" font-size="13" font-weight="600" text-anchor="middle">Data Collection</text>
+    <text x="120" y="86" fill="#5a7a9a" font-size="10" text-anchor="middle">equipment &#183; orders &#183; process</text>
   </g>
 
   <g>
-    <rect x="230" y="40" width="150" height="64" rx="10" fill="#111827" stroke="#1a2d44" stroke-width="1.5"/>
-    <text x="305" y="66" fill="#e8edf5" font-size="14" font-weight="600" text-anchor="middle">数据清洗</text>
-    <text x="305" y="86" fill="#5a7a9a" font-size="11" text-anchor="middle">pandas / numpy</text>
+    <rect x="220" y="40" width="160" height="64" rx="10" fill="#111827" stroke="#1a2d44" stroke-width="1.5"/>
+    <text x="300" y="66" fill="#e8edf5" font-size="13" font-weight="600" text-anchor="middle">Data Cleaning</text>
+    <text x="300" y="86" fill="#5a7a9a" font-size="10" text-anchor="middle">pandas / numpy</text>
   </g>
 
   <g>
-    <rect x="430" y="40" width="150" height="64" rx="10" fill="#111827" stroke="#1a2d44" stroke-width="1.5"/>
-    <text x="505" y="66" fill="#e8edf5" font-size="14" font-weight="600" text-anchor="middle">产能负荷预测</text>
-    <text x="505" y="86" fill="#5a7a9a" font-size="11" text-anchor="middle">scikit-learn 模型</text>
+    <rect x="400" y="40" width="160" height="64" rx="10" fill="#111827" stroke="#1a2d44" stroke-width="1.5"/>
+    <text x="480" y="66" fill="#e8edf5" font-size="13" font-weight="600" text-anchor="middle">Capacity Forecasting</text>
+    <text x="480" y="86" fill="#5a7a9a" font-size="10" text-anchor="middle">scikit-learn model</text>
   </g>
 
   <g>
-    <rect x="630" y="40" width="150" height="64" rx="10" fill="#111827" stroke="#1a2d44" stroke-width="1.5"/>
-    <text x="705" y="66" fill="#e8edf5" font-size="14" font-weight="600" text-anchor="middle">排程优化</text>
-    <text x="705" y="86" fill="#5a7a9a" font-size="11" text-anchor="middle">启发式排程算法</text>
+    <rect x="580" y="40" width="160" height="64" rx="10" fill="#111827" stroke="#1a2d44" stroke-width="1.5"/>
+    <text x="660" y="66" fill="#e8edf5" font-size="13" font-weight="600" text-anchor="middle">Scheduling</text>
+    <text x="660" y="86" fill="#5a7a9a" font-size="10" text-anchor="middle">heuristic algorithm</text>
   </g>
 
   <g>
-    <rect x="830" y="40" width="110" height="64" rx="10" fill="#111827" stroke="#1a2d44" stroke-width="1.5"/>
-    <text x="885" y="66" fill="#e8edf5" font-size="14" font-weight="600" text-anchor="middle">经济分析</text>
-    <text x="885" y="86" fill="#5a7a9a" font-size="11" text-anchor="middle">降本量化</text>
+    <rect x="760" y="40" width="160" height="64" rx="10" fill="#111827" stroke="#1a2d44" stroke-width="1.5"/>
+    <text x="840" y="66" fill="#e8edf5" font-size="13" font-weight="600" text-anchor="middle">Economic Analysis</text>
+    <text x="840" y="86" fill="#5a7a9a" font-size="10" text-anchor="middle">cost quantification</text>
   </g>
 
-  <line x1="180" y1="72" x2="222" y2="72" stroke="#5a7a9a" stroke-width="2" marker-end="url(#arrow)"/>
-  <line x1="380" y1="72" x2="422" y2="72" stroke="#5a7a9a" stroke-width="2" marker-end="url(#arrow)"/>
-  <line x1="580" y1="72" x2="622" y2="72" stroke="#5a7a9a" stroke-width="2" marker-end="url(#arrow)"/>
-  <line x1="780" y1="72" x2="822" y2="72" stroke="#5a7a9a" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="202" y1="72" x2="216" y2="72" stroke="#5a7a9a" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="382" y1="72" x2="396" y2="72" stroke="#5a7a9a" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="562" y1="72" x2="576" y2="72" stroke="#5a7a9a" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="742" y1="72" x2="756" y2="72" stroke="#5a7a9a" stroke-width="2" marker-end="url(#arrow)"/>
 
-  <rect x="230" y="150" width="650" height="64" rx="10" fill="#111827" stroke="#1a2d44" stroke-width="1.5"/>
-  <text x="555" y="176" fill="#e8edf5" font-size="14" font-weight="600" text-anchor="middle">可视化看板（ECharts）</text>
-  <text x="555" y="196" fill="#5a7a9a" font-size="11" text-anchor="middle">Dashboard / 产能预测 / 排程 / 经济分析 / 设备详情 / 数据上传</text>
+  <rect x="220" y="150" width="620" height="64" rx="10" fill="#111827" stroke="#1a2d44" stroke-width="1.5"/>
+  <text x="530" y="176" fill="#e8edf5" font-size="13" font-weight="600" text-anchor="middle">Visualization Dashboard (ECharts)</text>
+  <text x="530" y="196" fill="#5a7a9a" font-size="10" text-anchor="middle">Dashboard &#183; Forecasting &#183; Scheduling &#183; Economics &#183; Equipment &#183; Upload</text>
 
-  <line x1="430" y1="104" x2="430" y2="130" stroke="#5a7a9a" stroke-width="2"/>
-  <line x1="430" y1="130" x2="238" y2="130" stroke="#5a7a9a" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="480" y1="104" x2="480" y2="144" stroke="#5a7a9a" stroke-width="2" marker-end="url(#arrow)"/>
 
-  <rect x="230" y="252" width="650" height="30" rx="8" fill="rgba(0,212,255,0.06)"/>
-  <text x="555" y="272" fill="#5a7a9a" font-size="11" text-anchor="middle">CSV 数据上传 &#8594; 后台自动重训练模型，预测结果自动更新</text>
-  <line x1="555" y1="214" x2="555" y2="244" stroke="#5a7a9a" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="220" y="252" width="620" height="30" rx="8" fill="rgba(0,212,255,0.06)"/>
+  <text x="530" y="272" fill="#5a7a9a" font-size="11" text-anchor="middle">CSV upload &#8594; automatic model retraining</text>
+  <line x1="530" y1="214" x2="530" y2="246" stroke="#5a7a9a" stroke-width="2" marker-end="url(#arrow)"/>
 </svg>

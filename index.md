@@ -1,86 +1,86 @@
 ---
 layout: project_page
 permalink: /
-title: "塑料模具工厂 · 产能负荷预测与经济分析系统"
+title: "Plastic Mold Factory: Capacity-Load Forecasting & Economic Analysis System"
 authors:
-  - Zhang He
-tags: [Flask, 机器学习, 排程优化, 经济分析, ECharts]
+  - zhanghe
+tags: [Flask, Machine Learning, Scheduling, Economic Analysis, ECharts]
 code: https://github.com/wyl-ctrl-c-v/moju-website
-description: 面向塑料模具工厂的产能负荷预测与降本增效经济分析系统，集成数据模拟、机器学习预测、排程优化、经济分析与可视化看板。
+description: A capacity-load forecasting and cost-reduction & efficiency-improvement analysis system for plastic mold factories, integrating data simulation, machine-learning forecasting, scheduling optimization, economic analysis, and a visualization dashboard.
 ---
 
 <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
-        <h2>摘要</h2>
+        <h2>Abstract</h2>
         <div class="content has-text-justified">
-本系统面向塑料模具工厂的产能管理与降本增效需求，集成<b>数据模拟、机器学习预测、排程优化、经济分析与可视化看板</b>五大环节。系统基于设备负荷、订单、工艺、物料损耗与财务五类数据，利用 scikit-learn 构建产能负荷预测模型，对未来 30 天的设备负荷率、闲置率与能耗进行预测；并在此基础上完成排程优化与成本节约分析，量化降本增效收益，为工厂的产能规划与经营决策提供数据支撑。
+This system targets capacity management and cost-reduction &amp; efficiency-improvement needs in plastic mold factories. It integrates five stages: <b>data simulation, machine-learning forecasting, scheduling optimization, economic analysis, and a visualization dashboard</b>. Based on five types of data &mdash; equipment load, orders, processes, material loss, and finance &mdash; it builds a capacity-load forecasting model with scikit-learn to predict equipment load rate, idle rate, and energy consumption over the next 30 days. On top of that, it performs scheduling optimization and cost-saving analysis to quantify efficiency gains, providing data support for capacity planning and operational decisions.
         </div>
     </div>
 </div>
 
 ---
 
-## 背景
+## Background
 
-塑料模具工厂普遍面临设备负荷不均衡、订单交期难以把控、成本结构不透明等问题：
+Plastic mold factories commonly face unbalanced equipment load, difficult order-delivery control, and opaque cost structures:
 
-- **设备负荷波动大**：部分设备长期超负荷，部分设备长期闲置，缺乏前瞻性的产能预测；
-- **排程依赖经验**：订单排产依靠人工经验，急单、延期单难以统筹，交付率不稳定；
-- **降本缺少抓手**：人工、物料、能耗、维保等成本缺乏量化分析，降本措施难以评估成效。
+- **Large equipment-load fluctuations**: some equipment is chronically overloaded while others sit idle, lacking forward-looking capacity forecasts;
+- **Experience-based scheduling**: order scheduling relies on manual experience, making it hard to coordinate urgent and delayed orders and stabilize on-time delivery;
+- **No clear lever for cost reduction**: labor, material, energy, and maintenance costs lack quantitative analysis, making it hard to evaluate cost-reduction measures.
 
-## 目标
+## Objective
 
-本系统旨在构建一套**「数据建模 → 产能预测 → 排程优化 → 经济分析 → 可视化」**的闭环流程，实现：
+The goal is to build a closed loop of <i>data modeling &rarr; capacity forecasting &rarr; scheduling optimization &rarr; economic analysis &rarr; visualization</i>, and thereby:
 
-1. 对未来 30 天设备负荷率、闲置率与能耗的**机器学习预测**；
-2. 基于预测结果的**排程优化**，降低闲置率与订单延期率；
-3. 对成本结构与节支空间的**量化经济分析**，支撑降本增效决策。
+1. Provide machine-learning forecasts of equipment load rate, idle rate, and energy consumption over the next 30 days;
+2. Optimize scheduling based on forecasts to reduce idle rate and order-delay rate;
+3. Quantify the cost structure and savings potential to support cost-reduction and efficiency-improvement decisions.
 
-## 核心功能
+## Core Features
 
-- **总览看板**：设备总数、平均负荷率、订单延期率、月度利润、紧急订单占比等关键指标一屏总览；
-- **产能负荷预测**：基于历史 30 天数据，预测未来 30 天设备负荷率 / 闲置率 / 能耗，并给出超负荷告警线；
-- **排程优化**：对比优化前后的周期效率、闲置率、准时交付率，量化排程带来的收益；
-- **经济分析**：月度成本趋势、降本金额拆解（人工 / 物料 / 能耗 / 维保）、原材料损耗分析；
-- **设备详情**：逐台设备负荷明细与产出统计；
-- **数据上传**：支持上传自定义 CSV 数据，上传后自动在后台重训练预测模型。
+- **Overview dashboard**: key indicators at a glance &mdash; total machines, average load rate, order-delay rate, monthly profit, urgent-order ratio, and more;
+- **Capacity-load forecasting**: predict equipment load rate / idle rate / energy consumption for the next 30 days from 30 days of history, with an overload alert line;
+- **Scheduling optimization**: compare cycle efficiency, idle rate, and on-time delivery before vs. after optimization, quantifying scheduling gains;
+- **Economic analysis**: monthly cost trends, cost-saving breakdown (labor / material / energy / maintenance), and raw-material loss analysis;
+- **Equipment detail**: per-machine load details and output statistics;
+- **Data upload**: upload custom CSV data; the prediction model is automatically retrained in the background.
 
-## 系统架构
+## Architecture
 
-![系统架构](static/image/pipeline.svg)
-<div class="fig-caption">图 1：系统数据流与模块架构</div>
+![System architecture](static/image/pipeline.svg)
+<div class="fig-caption">Figure 1: System data flow and module architecture</div>
 
-## 界面展示
+## Screenshots
 
-![系统看板](static/image/dashboard.svg)
-<div class="fig-caption">图 2：系统总览看板（示例截图）</div>
+![System dashboard](static/image/dashboard.svg)
+<div class="fig-caption">Figure 2: Overview dashboard (sample screenshot)</div>
 
-## 功能模块
+## Modules
 
-| 模块 | 主要功能 | 关键技术 |
-|------|----------|----------|
-| 数据模拟 | 生成设备负荷 / 订单 / 工艺 / 物料损耗 / 财务五类数据 | pandas、numpy |
-| 产能预测 | 未来 30 天负荷率、闲置率、能耗预测 | scikit-learn |
-| 排程优化 | 订单排产、急单与延期单统筹、收益量化 | 启发式排程算法 |
-| 经济分析 | 成本结构、降本拆解、物料损耗分析 | pandas 聚合分析 |
-| 可视化 | 交互式看板与图表 | ECharts |
-| 数据上传 | CSV 上传 + 模型自动重训练 | Flask、多线程 |
+| Module | Function | Key technology |
+|--------|----------|----------------|
+| Data simulation | Generate equipment-load / order / process / material-loss / finance data | pandas, numpy |
+| Capacity forecasting | Forecast load rate, idle rate, and energy over the next 30 days | scikit-learn |
+| Scheduling optimization | Order scheduling, urgent/delayed order coordination, gain quantification | Heuristic scheduling |
+| Economic analysis | Cost structure, savings breakdown, material-loss analysis | pandas aggregation |
+| Visualization | Interactive dashboard and charts | ECharts |
+| Data upload | CSV upload + automatic model retraining | Flask, multithreading |
 
-## 技术栈
+## Tech Stack
 
-- **后端**：Flask（REST API）
-- **数据与模型**：pandas、numpy、scikit-learn
-- **前端**：HTML/CSS/JavaScript、ECharts
-- **部署**：Gunicorn（可部署至 Render / Railway 等云平台）
+- **Backend**: Flask (REST API)
+- **Data &amp; models**: pandas, numpy, scikit-learn
+- **Frontend**: HTML/CSS/JavaScript, ECharts
+- **Deployment**: Gunicorn (deployable to platforms such as Render / Railway)
 
-## 引用
+## Citation
 
 ```
 @misc{moju2026capacity,
-  title={塑料模具工厂产能负荷预测与经济分析系统},
-  author={Zhang He},
+  title={Plastic Mold Factory: Capacity-Load Forecasting & Economic Analysis System},
+  author={zhanghe},
   year={2026},
-  note={Flask + scikit-learn 实现的产能预测、排程优化与经济分析系统},
+  note={A Flask + scikit-learn system for capacity forecasting, scheduling optimization, and economic analysis},
   howpublished={\url{https://github.com/wyl-ctrl-c-v/moju-website}}
 }
 ```
