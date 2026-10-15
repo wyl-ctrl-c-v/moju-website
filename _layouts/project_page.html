@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }}</title>
+  {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <style>
+    body { font-family: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', 'Helvetica Neue', Arial, sans-serif; }
+    .hero.is-light { background-color: #f6f8fa; }
+    .publication-title { color: #1a1a2e; }
+    .author { white-space: nowrap; color: #2c3e50; }
+    .affiliations { color: #7a8a9a; margin-top: 0.35rem; font-size: 0.95rem; }
+    .tags-row { margin-top: 0.8rem; }
+    .link-buttons { margin-top: 1rem; }
+    .content h2 { border-bottom: 2px solid #e9eef4; padding-bottom: 0.4rem; margin-top: 2rem; }
+    .content img { display: block; margin: 1.2rem auto; border-radius: 8px;
+                   box-shadow: 0 4px 18px rgba(0,0,0,0.08); max-width: 100%; }
+    .fig-caption { text-align: center; color: #7a8a9a; font-size: 0.85rem; margin-top: -0.6rem; }
+    .container.is-max-desktop { max-width: 900px; }
+    .footer { background-color: #f6f8fa; padding: 1.5rem; }
+  </style>
+</head>
+<body>
+
+  <!-- 顶部标题区 -->
+  <section class="hero is-light">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column has-text-centered is-four-fifths">
+            <h1 class="title is-2 publication-title">{{ page.title }}</h1>
+
+            {% if page.authors %}
+            <p class="subtitle is-5 authors">
+              {% for author in page.authors %}
+                <span class="author">{{ author }}</span>{% unless forloop.last %} <span class="has-text-grey">&middot;</span> {% endunless %}
+              {% endfor %}
+            </p>
+            {% endif %}
+
+            {% if page.affiliations %}
+            <p class="affiliations">{{ page.affiliations }}</p>
+            {% endif %}
+
+            {% if page.tags %}
+            <p class="tags-row">
+              {% for tag in page.tags %}<span class="tag is-link is-light">{{ tag }}</span>{% endfor %}
+            </p>
+            {% endif %}
+
+            <div class="buttons is-centered link-buttons">
+              {% if page.paper %}<a class="button is-link is-light" href="{{ page.paper }}" target="_blank"><i class="fas fa-file-pdf"></i>&nbsp;Paper</a>{% endif %}
+              {% if page.video %}<a class="button is-link is-light" href="{{ page.video }}" target="_blank"><i class="fas fa-video"></i>&nbsp;Video</a>{% endif %}
+              {% if page.code %}<a class="button is-link is-light" href="{{ page.code }}" target="_blank"><i class="fab fa-github"></i>&nbsp;Code</a>{% endif %}
+              {% if page.data %}<a class="button is-link is-light" href="{{ page.data }}" target="_blank"><i class="fas fa-database"></i>&nbsp;Data</a>{% endif %}
+              {% if page.demo %}<a class="button is-link" href="{{ page.demo }}" target="_blank"><i class="fas fa-rocket"></i>&nbsp;Live Demo</a>{% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 正文 -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="content">
+        {{ content }}
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer has-text-centered has-text-grey">
+    <div class="content is-small">
+      Powered by <a href="https://jekyllrb.com">Jekyll</a> &middot; Hosted on <a href="https://pages.github.com">GitHub Pages</a>
+    </div>
+  </footer>
+
+</body>
+</html>

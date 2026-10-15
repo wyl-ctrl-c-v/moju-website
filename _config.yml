@@ -1,0 +1,26 @@
+# ============================================================
+# 项目主页 (Jekyll) 配置
+# 该站点是一个单页项目介绍页，可部署到 GitHub Pages。
+# ============================================================
+
+title: "塑料模具工厂 · 产能负荷预测与经济分析系统"
+description: "数据建模 → 产能预测 → 排程优化 → 经济分析 → 可视化看板"
+
+# 部署位置相关（重要）：
+#  - 如果你用「用户主页」 username.github.io 部署，保持 "" 即可；
+#  - 如果你用「项目主页」 username.github.io/仓库名 部署，这里填 /仓库名，
+#    例如 baseurl: "/project_website"
+# 页面里的图片使用相对路径，所以大多数情况下即使不填 baseurl 也能正常显示。
+baseurl: ""
+url: ""
+
+# Markdown 解析器与代码高亮
+markdown: kramdown
+highlighter: rouge
+
+# 从站点构建中排除的文件/目录
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
