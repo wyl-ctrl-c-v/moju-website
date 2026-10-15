@@ -3,12 +3,9 @@ layout: project_page
 permalink: /
 title: "塑料模具工厂 · 产能负荷预测与经济分析系统"
 authors:
-  - 你的名字
-affiliations: 你的单位 / 团队
+  - Zhang He
 tags: [Flask, 机器学习, 排程优化, 经济分析, ECharts]
-code: https://github.com/你的用户名/moju
-data: https://github.com/你的用户名/moju/tree/main/data
-demo: https://你的应用.onrender.com
+code: https://github.com/wyl-ctrl-c-v/moju-website
 description: 面向塑料模具工厂的产能负荷预测与降本增效经济分析系统，集成数据模拟、机器学习预测、排程优化、经济分析与可视化看板。
 ---
 
