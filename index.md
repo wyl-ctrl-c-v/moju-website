@@ -3,7 +3,7 @@ layout: project_page
 permalink: /
 title: "Plastic Mold Factory: Capacity-Load Forecasting & Economic Analysis System"
 authors:
-  - zhanghe
+  - He Zhang
 tags: [Flask, Machine Learning, Scheduling, Economic Analysis, ECharts]
 code: https://github.com/wyl-ctrl-c-v/moju-website
 description: A capacity-load forecasting and cost-reduction & efficiency-improvement analysis system for plastic mold factories, integrating data simulation, machine-learning forecasting, scheduling optimization, economic analysis, and a visualization dashboard.
