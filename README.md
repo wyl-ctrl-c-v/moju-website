@@ -23,7 +23,7 @@ Open `index.md` and update the fields in the front matter:
 
 | Placeholder | Replace with |
 |-------------|--------------|
-| `zhanghe` | Your name |
+| `He Zhang` | Your name |
 | `https://github.com/wyl-ctrl-c-v/moju-website` | Your GitHub repository URL |
 
 ### 2. Replace the images

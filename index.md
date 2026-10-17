@@ -78,7 +78,7 @@ The goal is to build a closed loop of <i>data modeling &rarr; capacity forecasti
 ```
 @misc{moju2026capacity,
   title={Plastic Mold Factory: Capacity-Load Forecasting & Economic Analysis System},
-  author={zhanghe},
+  author={He Zhang},
   year={2026},
   note={A Flask + scikit-learn system for capacity forecasting, scheduling optimization, and economic analysis},
   howpublished={\url{https://github.com/wyl-ctrl-c-v/moju-website}}
